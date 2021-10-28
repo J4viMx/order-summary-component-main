@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url(/src/img/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: contain;
+    min-height: 100vh;
+    background-color: hsl(225, 100%, 94%);
+}
+
+
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+
+.contenedor{
+    /* max-width: 120rem;
+    width: 90%; */
+    width: min(70%, 40rem); /* Forma de agrupar lo anterior */
+    margin: 0 auto;
+}
+
+.contenedor-principal{
+    margin-top: 10rem;
+    background-color: white;
+    border: 1px solid rgb(179, 179, 179);
+    width: 90%;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.imagen-principal{
+    width: 100%;
+}
+
+.informacion{
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.titulo{
+    white-space: nowrap;
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.texto{
+    padding-top: 2rem;
+    font-weight: 500;
+    color: rgb(12, 12, 12);
+    font-size: 1.4rem;
+}
+
+.plan{
+    background-color: hsl(225, 100%, 98%);
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 15% 50% 20%;
+    gap: 2rem;
+    padding: 1.8rem 1rem 1.8rem 1rem;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.icono{
+    align-self: center;
+    height: 75%;
+}
+
+.texto-negritas{
+    font-weight: 900;
+    font-size: 1.4rem;
+    white-space: nowrap;
+    padding-top: .5rem;
+    padding-bottom: .3rem;
+}
+
+.precio{
+    font-size: 1.5rem;
+    color: rgb(70, 70, 70);
+    font-weight: 500;
+}
+
+.boton-change{
+    margin-top: 1.5rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: hsl(245, 75%, 52%)
+}
+
+.botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    
+}
+
+.boton{
+    text-decoration: none;
+    text-align: center;
+    width: 85%;
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-weight: 700;
+}
+
+.boton-azul{
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+}
+
+.boton-invisible{
+    background: transparent;
+    color: gray;
+}
+
+
+.boton-change:hover, .boton-invisible:hover{
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+}
+
+.boton-azul:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+
+
+@media (min-width: 1440px) {
+    .contenedor-principal{
+        width: 30%;
+    }
+
+    body{
+        background-image: url(/src/img/pattern-background-desktop.svg);
+        background-position: center -20rem;
+    }
+}
