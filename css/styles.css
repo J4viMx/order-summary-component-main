@@ -148,7 +148,7 @@ html{
     }
 
     body{
-        background-image: url(/src/img/pattern-background-desktop.svg);
+        background-image: url(src/img/pattern-background-desktop.svg);
         background-position: center -20rem;
     }
 }
